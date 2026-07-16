@@ -6,13 +6,15 @@ export const metadata: Metadata = {
     "Independent creative direction, identity systems and digital experiences for culture-led studios and brands.",
 };
 
+const MEDIA = "/FORMA17/media";
+
 const projects = [
   {
     no: "01",
     title: ["PERMANENT", "GESTURE"],
     tags: "ART DIRECTION / IDENTITY / CAMPAIGN",
     year: "2026",
-    image: "/media/process-01.jpg",
+    image: `${MEDIA}/process-01.jpg`,
     alt: "Tattoo artist working in a monochrome studio",
     intro: "Turning a private ritual into a public language.",
     challenge: "A new tattoo practice needed to feel precise and human without borrowing the usual visual codes of the category.",
@@ -24,7 +26,7 @@ const projects = [
     title: ["RAW", "VOLUME"],
     tags: "STRATEGY / SPACE / DIGITAL",
     year: "2025",
-    image: "/media/structure-02.jpg",
+    image: `${MEDIA}/structure-02.jpg`,
     alt: "Curved concrete architecture in black and white",
     intro: "A cultural space designed to resist easy definition.",
     challenge: "The venue moved between exhibition, performance and retail. Its identity had to hold every format without flattening any of them.",
@@ -36,7 +38,7 @@ const projects = [
     title: ["HUMAN", "TRACE"],
     tags: "EDITORIAL / FILM / PLATFORM",
     year: "2025",
-    image: "/media/process-02.jpg",
+    image: `${MEDIA}/process-02.jpg`,
     alt: "Close view of an artist at work",
     intro: "An editorial platform about the intelligence of the hand.",
     challenge: "A craft collective needed to communicate expertise without becoming nostalgic, precious or overly polished.",
@@ -89,8 +91,8 @@ export default function Home() {
 
       <div className="page">
         <section className="hero" aria-labelledby="hero-title">
-          <video className="heroVideo" autoPlay muted loop playsInline poster="/media/process-01.jpg">
-            <source src="/media/hero.mp4" type="video/mp4" />
+          <video className="heroVideo" autoPlay muted loop playsInline poster={`${MEDIA}/process-01.jpg`}>
+            <source src={`${MEDIA}/hero.mp4`} type="video/mp4" />
           </video>
           <div className="heroShade" />
           <div className="heroTop"><span>INDEPENDENT CREATIVE PRACTICE</span><span>IDENTITY — DIGITAL — DIRECTION</span></div>
@@ -119,7 +121,7 @@ export default function Home() {
           </div>
           <div className="statementGrid">
             <div className="statementPortrait reveal">
-              <img src="/media/interior-01.jpg" alt="Minimal monochrome architectural interior" />
+              <img src={`${MEDIA}/interior-01.jpg`} alt="Minimal monochrome architectural interior" />
               <div className="imageIndex"><span>FIG. 01</span><span>STRUCTURE AS LANGUAGE</span></div>
             </div>
             <div className="statementCopy reveal">
@@ -173,7 +175,7 @@ export default function Home() {
         </section>
 
         <section className="interlude" aria-label="Studio philosophy">
-          <img src="/media/structure-01.jpg" alt="Geometric brutalist architecture" />
+          <img src={`${MEDIA}/structure-01.jpg`} alt="Geometric brutalist architecture" />
           <div className="interludeTrack" aria-hidden="true"><span>STRUCTURE / EMOTION / STRUCTURE / EMOTION /</span></div>
           <div className="interludeNote"><span>FORM FOLLOWS INTENTION</span><span>NOT TREND</span></div>
         </section>
@@ -182,10 +184,10 @@ export default function Home() {
           <div className="sectionLabel"><span>( C )</span><span>VISUAL RESEARCH / ARCHIVE</span><span>ONGOING</span></div>
           <div className="archiveTitle"><h2 id="archive-title">LOOK<br />CLOSER.</h2><p>Ideas are rarely invented in a room. They are noticed — in material, movement, language and the way people make things.</p></div>
           <div className="archiveGrid">
-            <figure className="a1"><img src="/media/studio-01.jpg" alt="Artist working inside a studio" /><figcaption>PROCESS / 0042</figcaption></figure>
-            <figure className="a2"><img src="/media/structure-02.jpg" alt="Concrete architectural detail" /><figcaption>VOLUME / 0018</figcaption></figure>
+            <figure className="a1"><img src={`${MEDIA}/studio-01.jpg`} alt="Artist working inside a studio" /><figcaption>PROCESS / 0042</figcaption></figure>
+            <figure className="a2"><img src={`${MEDIA}/structure-02.jpg`} alt="Concrete architectural detail" /><figcaption>VOLUME / 0018</figcaption></figure>
             <div className="archiveQuote"><span>“</span><p>Good identity does not describe an organisation. It reveals the tension that makes it interesting.</p></div>
-            <figure className="a3"><img src="/media/process-02.jpg" alt="Close view of a craft process" /><figcaption>GESTURE / 0026</figcaption></figure>
+            <figure className="a3"><img src={`${MEDIA}/process-02.jpg`} alt="Close view of a craft process" /><figcaption>GESTURE / 0026</figcaption></figure>
           </div>
         </section>
 
@@ -211,7 +213,7 @@ export default function Home() {
         </section>
 
         <section className="process">
-          <div className="processVisual"><video autoPlay muted loop playsInline poster="/media/process-01.jpg"><source src="/media/hero.mp4" type="video/mp4" /></video><span>FIELD NOTES / FILM 03</span></div>
+          <div className="processVisual"><video autoPlay muted loop playsInline poster={`${MEDIA}/process-01.jpg`}><source src={`${MEDIA}/hero.mp4`} type="video/mp4" /></video><span>FIELD NOTES / FILM 03</span></div>
           <div className="processText">
             <span className="eyebrow">THE PROCESS / 04—10 WEEKS</span>
             <h2>ONE LINE<br />FROM WHY<br />TO LIVE.</h2>
